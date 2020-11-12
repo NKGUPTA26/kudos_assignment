@@ -29,6 +29,7 @@ def main(search_key_input):
     time.sleep(20)
     
     driver.find_element_by_xpath("//input[@id='searchEmployer']").click()
+    time.sleep(10)
     information_of_data = driver.find_element_by_xpath('//body/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/div[1]').text
     number_of_data = information_of_data.split().pop()
     number_of_data = int(number_of_data)
